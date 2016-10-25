@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="您的用户已在其他设备上登录，被迫下线！"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="10dp"
+        android:background="@color/base_line" />
+
+    <Button
+        android:id="@+id/btn_ensure"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:gravity="center"
+        android:text="确定"
+        android:textSize="16sp" />
+
+</LinearLayout>

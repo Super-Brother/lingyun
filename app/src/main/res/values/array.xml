@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="proudct_source_category">
+        <item>出售</item>
+        <item>出租</item>
+    </string-array>
+    <string-array name="pic_source">
+        <item>相机</item>
+        <item>图库</item>
+    </string-array>
+    <string-array name="room">
+        <item>不限</item>
+        <item>1室</item>
+        <item>2室</item>
+        <item>3室</item>
+        <item>4室</item>
+        <item>&gt;4室</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="rent_price">
+        <item>不限</item>
+        <!--<item>&lt;500</item>2-->
+        <item>&lt;1000</item>
+        <item>1000-2000</item>
+        <item>2000-3000</item>
+        <item>&gt;3000</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="sell_price">
+        <item>不限</item>
+        <item>&lt;20万</item>
+        <item>20万-40万</item>
+        <item>40万-60万</item>
+        <item>60万-80万</item>
+        <item>80万-100万</item>
+        <item>&gt;100万</item>
+        <item>自定义</item>
+    </string-array>
+</resources>

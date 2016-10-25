@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="30dp"
+        android:background="@color/base_line" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tv_order_cell"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="单池"
+            android:textColor="@drawable/radio_btn_text_color_selector"
+            android:textSize="@dimen/textsize_m" />
+
+        <RadioButton
+            android:id="@+id/tv_appointment_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="预约单"
+            android:textColor="@drawable/radio_btn_text_color_selector"
+            android:textSize="@dimen/textsize_m" />
+
+        <RadioButton
+            android:id="@+id/tv_finish_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="已完成"
+            android:textColor="@drawable/radio_btn_text_color_selector"
+            android:textSize="@dimen/textsize_m" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="0dp"
+            android:layout_height="2px"
+            android:layout_weight="1"
+            android:background="@color/main_color" />
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="0dp"
+            android:layout_height="2px"
+            android:layout_weight="1"
+            android:background="@color/base_line" />
+
+        <View
+            android:id="@+id/line_3"
+            android:layout_width="0dp"
+            android:layout_height="2px"
+            android:layout_weight="1"
+            android:background="@color/base_line" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+</LinearLayout>
+

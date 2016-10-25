@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">领云洗车</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="progressbar_title">加载中&#8230;</string>
+    <string name="connection_failure">网络错误</string>
+    <string name="error_timeout">网络超时</string>
+    <string name="error_no_internet">无可用网络</string>
+    <string name="error_server_stop">服务器无响应</string>
+    <string name="net_error">网络异常</string>
+    <string name="service_phone">400-777-8888</string>
+</resources>

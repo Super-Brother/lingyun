@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_top" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/base_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/text_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/icon_order" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="订单信息"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/textsize_l" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/base_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/text_white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="张先生"
+                            android:textSize="@dimen/textsize_l" />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="12364598777"
+                            android:textColor="@color/text_default"
+                            android:textSize="@dimen/textsize_l" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_carbrand_carype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="奥迪A30"
+                            android:textColor="@color/text_gary"
+                            android:textSize="@dimen/textsize_l" />
+
+                        <TextView
+                            android:id="@+id/tv_car_model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="轿车"
+                            android:textColor="@color/text_gary"
+                            android:textSize="@dimen/textsize_l" />
+
+                        <TextView
+                            android:id="@+id/tv_car_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="豫A66666"
+                            android:textColor="@color/text_gary"
+                            android:textSize="@dimen/textsize_l" />
+
+                        <TextView
+                            android:id="@+id/tv_car_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="白色"
+                            android:textColor="@color/text_gary"
+                            android:textSize="@dimen/textsize_l" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="郑州市金水区花园路与农业路交叉口100米路东兴业大厦幸福公寓"
+                        android:textColor="@color/text_gary"
+                        android:textSize="@dimen/textsize_l" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/base_line" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/base_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/text_white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_service_picture"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_wash_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:text="内洗"
+                            android:textSize="@dimen/textsize_l" />
+
+                        <TextView
+                            android:id="@+id/tv_wash_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_wash_type"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:text="龟牌进口清洁剂龟牌进口清洁剂龟牌进口清洁剂龟牌进口清洁剂口清洁剂龟牌进口清洁剂"
+                            android:textColor="@color/text_gary"
+                            android:textSize="@dimen/textsize_m" />
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/tv_service_price"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="￥ 25"-->
+                        <!--android:textColor="@color/text_gary"-->
+                        <!--android:textSize="@dimen/textsize_m" />-->
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/tv_totole_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/base_line" />
+
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="right"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="实付款：25元"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/textsize_l" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/base_line" />
+
+                <TextView
+                    android:id="@+id/tv_order_remarks"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/text_white"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:paddingLeft="20dp"
+                    android:text="订单备注：车辆是白色"
+                    android:textColor="@color/text_gary"
+                    android:textSize="@dimen/textsize_l" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/base_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_wash_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@mipmap/icon_car"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="洗车完成"
+                            android:textColor="@color/text_default"
+                            android:textSize="@dimen/textsize_m" />
+
+                        <TextView
+                            android:id="@+id/tv_time_finish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="right"
+                            android:paddingRight="20dp"
+                            android:text="2015/02/12"
+                            android:textColor="@color/text_gary"
+                            android:textSize="@dimen/textsize_m" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="35dp"
+                            android:background="@color/text_gary"
+                            android:gravity="center_vertical" />
+
+                        <com.gyzh.app.lingyun.views.HorizontalListView
+                            android:id="@+id/hlv_photos_finish"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="20dp"></com.gyzh.app.lingyun.views.HorizontalListView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_wash_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@mipmap/icon_car"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="开始洗车"
+                            android:textColor="@color/text_default"
+                            android:textSize="@dimen/textsize_m" />
+
+                        <TextView
+                            android:id="@+id/tv_time_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="right"
+                            android:paddingRight="20dp"
+                            android:text="2015/02/12"
+                            android:textColor="@color/text_gary"
+                            android:textSize="@dimen/textsize_m" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="35dp"
+                            android:background="@color/text_gary"
+                            android:gravity="center_vertical" />
+
+                        <com.gyzh.app.lingyun.views.HorizontalListView
+                            android:id="@+id/hlv_photo_before"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="20dp"></com.gyzh.app.lingyun.views.HorizontalListView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a0000000"
+        android:visibility="gone" />
+
+</FrameLayout>
+
